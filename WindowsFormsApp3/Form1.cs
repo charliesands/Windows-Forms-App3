@@ -16,5 +16,14 @@ namespace WindowsFormsApp3
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            for (int c = 0; c < 254; c++)
+            {
+                this.BackColor = Color.FromArgb(c, 255 - c, c);
+                Application.DoEvents();
+            }
+        }
     }
 }
