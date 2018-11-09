@@ -28,7 +28,7 @@ namespace WindowsFormsApp3
                 System.Threading.Thread.Sleep(3);
             }
 
-            for (int c = 253; c > 0  && Visible; c--)
+            for (int c = 254; c >= 0  && Visible; c--)
             {
                 this.BackColor = Color.FromArgb(c, 255 - c, c);
                 Application.DoEvents();
